@@ -52,7 +52,7 @@ function MainContent () {
                 <p className='banner_p'>
                     VETERAN
                 </p>
-                <img className="ban_i" src="src/images/banner_img.png"></img>
+                <img className="ban_i" src="src/images/banner_img.PNG"></img>
             </div>
             <div className="grid-container">
                 <div className="item2 udb1">
