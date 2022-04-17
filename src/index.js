@@ -52,11 +52,11 @@ function MainContent () {
                 <p className='banner_p'>
                     VETERAN
                 </p>
-                <img className="ban_i" src="src/images/banner_img.png"></img>
+                <img className="ban_i" src="src/images/banner_img.PNG"></img>
             </div>
             <div className="grid-container">
                 <div className="item2 udb1">
-                    <img className="udb" src="src/images/udb.png"></img>
+                    <img className="udb" src="src/images/udb.PNG"></img>
                 </div>
                 <div className="item3">
                     <h6>INTRODUCING THE WEAPONS MINTING GUIDE</h6>
