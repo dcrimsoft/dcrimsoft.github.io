@@ -70,6 +70,28 @@ function MainContent () {
                     </button>
                 </div>
             </div>
+
+            <div className="me_weapons">
+                <div className="weapons_t">
+                    <h3>
+                        My Weapons
+                    </h3>
+                    <p>
+                        Weapon loadouts found in your connected wallet will appear here
+                    </p>
+                </div>
+                <div className="flex-container">
+                    <div>
+                        <img className="icon_img" src="./src/images/add_icon.png"></img>
+                    </div>
+                    <div>
+                        <img className="icon_img" src="./src/images/add_icon.png"></img>
+                    </div>
+                    <div>
+                        <img className="icon_img" src="./src/images/add_icon.png"></img>    
+                    </div>  
+                </div>
+            </div>
         </div>
         
     )
