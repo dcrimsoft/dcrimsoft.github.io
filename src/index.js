@@ -54,7 +54,7 @@ function MainContent () {
 
             <div className="main_scroll_div">
                 <div>
-                    <button className="icon"  onClick={ scrollL }>
+                    <button className="icon"  onClick={ scrollR }>
                         <i className="fa fa-chevron-left" aria-hidden="true"></i>
                     </button>
                 </div>
@@ -93,7 +93,7 @@ function MainContent () {
                     </div>
                 </div>
                 <div>
-                    <button className="icon right_i" onClick={ scrollR }>
+                    <button className="icon right_i" onClick={ scrollL }>
                         <i className="fa fa-chevron-right" aria-hidden="true"></i>
                     </button>
                 </div>
