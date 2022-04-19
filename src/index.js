@@ -47,13 +47,63 @@ function Navbar() {
 
 function MainContent () {
     return (
-        <div>
-            <div className="banner">
-                <p className='banner_p'>
-                    VETERAN
-                </p>
-                <img className="ban_i" src="./src/images/banner_img.jpg"></img>
+        <div className="m_content">
+
+
+
+
+            <div className="main_scroll_div">
+                <div>
+                    <button className="icon"  onClick={ scrollL }>
+                        <i className="fa fa-chevron-left" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <div className="cover">
+                    <div className="scroll_items">
+                        <div className="child">
+                            <p className='banner_p'>
+                                VETERAN
+                            </p>
+                            <img className="ban_i" src="./src/images/banner_img.jpg"></img>
+                        </div>
+                        <div className="child">
+                            <p className='banner_p'>
+                                AMATEUR
+                            </p>
+                            <img className="ban_i" src="./src/images/banner_img.jpg"></img>
+                        </div>
+                        <div className="child">
+                            <p className='banner_p'>
+                                ZOMBIE KILLER
+                            </p>
+                            <img className="ban_i" src="./src/images/banner_img.jpg"></img>
+                        </div>
+                        <div className="child">
+                            <p className='banner_p'>
+                                SURVIVOR
+                            </p>
+                            <img className="ban_i" src="./src/images/banner_img.jpg"></img>
+                        </div>
+                        <div className="child">
+                            <p className='banner_p'>
+                                ASSASSIN
+                            </p>
+                            <img className="ban_i" src="./src/images/banner_img.jpg"></img>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button className="icon right_i" onClick={ scrollR }>
+                        <i className="fa fa-chevron-right" aria-hidden="true"></i>
+                    </button>
+                </div>
             </div>
+
+
+
+
+
+\
             <div className="grid-container">
                 <div className="item2 udb1">
                     <img className="udb" src="./src/images/udb.jpg"></img>
@@ -93,7 +143,6 @@ function MainContent () {
                 </div>
             </div>
         </div>
-        
     )
 }
 
@@ -110,3 +159,13 @@ ethereumButton.addEventListener('click', () => {
   //Will Start the metamask extension
   ethereum.request({ method: 'eth_requestAccounts' });
 });
+
+function scrollL() {
+    var left = document.querySelector(".scroll_items");
+    left.scrollBy(420, 0);
+}
+
+function scrollR() {
+    var right = document.querySelector(".scroll_items");
+    right.scrollBy(-420, 0);
+}
