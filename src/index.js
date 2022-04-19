@@ -64,33 +64,15 @@ function MainContent() {
                     <div className="cover">
                         <div className="scroll_items">
                             <div className="child">
-                                <p className='banner_p'>
-                                    VETERAN
-                                </p>
-                                <img className="ban_i" src="./src/images/banner_img.jpg"></img>
+                                <img className="ban_i" src="./src/images/amateur.png"></img>
                             </div>
                             <div className="child">
-                                <p className='banner_p'>
-                                    AMATEUR
-                                </p>
-                                <img className="ban_i" src="./src/images/banner_img.jpg"></img>
+                                <img className="ban_i" src="./src/images/z_killer.png"></img>
                             </div>
                             <div className="child">
-                                <p className='banner_p'>
-                                    ZOMBIE KILLER
-                                </p>
-                                <img className="ban_i" src="./src/images/banner_img.jpg"></img>
+                                <img className="ban_i" src="./src/images/survivor_bg.png"></img>
                             </div>
                             <div className="child">
-                                <p className='banner_p'>
-                                    SURVIVOR
-                                </p>
-                                <img className="ban_i" src="./src/images/banner_img.jpg"></img>
-                            </div>
-                            <div className="child">
-                                <p className='banner_p'>
-                                    ASSASSIN
-                                </p>
                                 <img className="ban_i" src="./src/images/assassin_bg.png"></img>
                             </div>
                         </div>
