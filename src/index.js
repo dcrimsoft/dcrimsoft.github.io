@@ -137,14 +137,14 @@ function MainContent() {
                     <div className="main">
                         <div className="row">
                             <div className="column">
-                                <img className="icon_img" src="./src/images/add_icon.png"></img>
+                                <img className="icon_img" src="./src/images/add_icon.PNG"></img>
                                 
                             </div>
                             <div className="column">
-                                <img className="icon_img" src="./src/images/add_icon.png"></img>
+                                <img className="icon_img" src="./src/images/add_icon.PNG"></img>
                             </div>
                             <div className="column">
-                                <img className="icon_img" src="./src/images/add_icon.png"></img>
+                                <img className="icon_img" src="./src/images/add_icon.PNG"></img>
                             </div>
                         </div>
                     </div>
