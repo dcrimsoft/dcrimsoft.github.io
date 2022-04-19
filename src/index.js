@@ -132,13 +132,13 @@ function MainContent () {
                 </div>
                 <div className="flex-container">
                     <div>
-                        <img className="icon_img" src="./src/images/add_icon.png"></img>
+                        <img className="icon_img" src="./src/images/add_icon.PNG"></img>
                     </div>
                     <div>
-                        <img className="icon_img" src="./src/images/add_icon.png"></img>
+                        <img className="icon_img" src="./src/images/add_icon.PNG"></img>
                     </div>
                     <div>
-                        <img className="icon_img" src="./src/images/add_icon.png"></img>    
+                        <img className="icon_img" src="./src/images/add_icon.PNG"></img>    
                     </div>  
                 </div>
             </div>
