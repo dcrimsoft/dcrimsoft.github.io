@@ -64,10 +64,10 @@ function MainContent() {
                     <div className="cover">
                         <div className="scroll_items">
                             <div className="child">
-                                <img className="ban_i" src="./src/images/amateur.PNG"></img>
+                                <img className="ban_i" src="./src/images/amateur.png"></img>
                             </div>
                             <div className="child">
-                                <img className="ban_i" src="./src/images/z_killer.PNG"></img>
+                                <img className="ban_i" src="./src/images/z_killer.png"></img>
                             </div>
                             <div className="child">
                                 <img className="ban_i" src="./src/images/survivor_bg.png"></img>
@@ -151,12 +151,33 @@ ethereumButton.addEventListener('click', () => {
   ethereum.request({ method: 'eth_requestAccounts' });
 });
 
+
+let scoll_item = document.querySelector(".scroll_items");
 function scrollL() {
-    var left = document.querySelector(".scroll_items");
-    left.scrollBy(350, 0);
+    var p_width = document.documentElement.clientWidth;
+    
+
+    let l_width = scoll_item.offsetWidth;
+    //alert(l_width);
+
+    scoll_item.scrollBy(l_width, 0);
+
+    // if (p_width >= 2500) {
+    //     left.scrollBy(661, 0);
+    // }
+    // else if (p_width >= 2000) {
+    //     left.scrollBy(510, 0);
+    // }
+    // else if (p_width >= 1300) {
+    //     left.scrollBy(370, 0);
+    // }  
+    // else if (p_width >= 1200)
+    // {
+    //     left.scrollBy(335, 0);
+    // }  
 }
 
 function scrollR() {
-    var right = document.querySelector(".scroll_items");
-    right.scrollBy(-350, 0);
+    let r_width = scoll_item.offsetWidth;
+    scoll_item.scrollBy(-r_width, 0);
 }
