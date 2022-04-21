@@ -5,9 +5,9 @@
 body {
     background-image: url("images/main_bg.jpg");
     background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     margin: 0;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -73,65 +73,9 @@ body {
 
 
 
-.main_scroll_div {
-	margin: 0 auto;
-    width: 40%;
-	height: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	
-}
 
-.cover {
-	position: relative;
-	width: 71%;
-	height: 50%;
-}
 
-.cover::before {
-	position: absolute;
-	content: "";
-	left: 0;
-	top: 0;
-	z-index: 99;
-	height: 100%;
-	width: 150px;
-}
 
-.cover::after {
-	position: absolute;
-	content: "";
-	right: 100px;
-	top: 0;
-	z-index: 99;
-	height: 100%;
-	width: 150px;
-}
-
-.scroll_items {
-	width: 90%;
-	height: auto;
-	display: flex;
-	align-items: center;
-	justify-content: left;
-	overflow: auto;
-	position: relative;
-	scroll-behavior: smooth;
-}
-
-.child {
-	min-width: 330px;
-	height: auto;
-	margin: 50px 10px;
-	cursor: pointer;
-	overflow: hidden;
-	border-radius: 10px;
-    box-shadow: 0 0 10px 3px red;
-	align-items: center;
-	text-align: center;
-	background-color: #202429;
-}
 
 .child::-webkit-scrollbar {
 	-webkit-appearance: none;
@@ -496,9 +440,89 @@ body {
 
 
 
-  /* Use a media query to add a breakpoint at 800px: */
+
+
+
+.cover {
+	position: relative;
+	width: 71%;
+	height: 50%;
+}
+
+.cover::before {
+	position: absolute;
+	content: "";
+	left: 0;
+	top: 0;
+	z-index: 99;
+	height: 100%;
+	width: 150px;
+}
+
+.cover::after {
+	position: absolute;
+	content: "";
+	right: 100px;
+	top: 0;
+	z-index: 99;
+	height: 100%;
+	width: 150px;
+}
+
+.scroll_items {
+	width: 90%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	overflow: auto;
+	position: relative;
+	scroll-behavior: smooth;
+}
+
+.child {
+	min-width: 95%;
+	height: auto;
+	margin: 50px 10px;
+	cursor: pointer;
+	overflow: hidden;
+	border-radius: 10px;
+    box-shadow: 0 0 10px 3px red;
+	align-items: center;
+	text-align: center;
+	background-color: #202429;
+}
+
+.main_scroll_div {
+	margin: 0 auto;
+	width: 40%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+  /* Use a media query to add a breakpoint at 800px:
 @media screen and (max-width: 600px) {
-	
-	
-}  
-  
+	.main_scroll_div {
+	  	width: 100%;
+  	}
+	.cover {
+		width: 91%;
+		height: 50%;
+	}
+	.child {
+		min-width: 100%;
+		height: auto;
+		margin: 0 auto;
+		cursor: pointer;
+		overflow: hidden;
+		border-radius: 10px;
+		box-shadow: 0 0 10px 3px red;
+		align-items: center;
+		text-align: center;
+		background-color: #202429;
+	}
+}
+*/
