@@ -160,7 +160,7 @@ function scrollL() {
     let l_width = scoll_item.offsetWidth;
     //alert(l_width);
 
-    scoll_item.scrollBy(l_width + 5, 0);
+    scoll_item.scrollBy(l_width + 2, 0);
 
     // if (p_width >= 2500) {
     //     left.scrollBy(661, 0);
@@ -179,5 +179,5 @@ function scrollL() {
 
 function scrollR() {
     let r_width = scoll_item.offsetWidth;
-    scoll_item.scrollBy(-r_width - 5, 0);
+    scoll_item.scrollBy(-r_width - 2, 0);
 }
