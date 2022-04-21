@@ -52,37 +52,57 @@ function MainContent() {
 
 
 
-
-
-
-                <div className="main_scroll_div">
-                    <div>
-                        <button className="icon"  onClick={ scrollR }>
-                            <i className="fa fa-chevron-left" aria-hidden="true"></i>
-                        </button>
-                    </div>
-                    <div className="cover">
-                        <div className="scroll_items">
-                            <div className="child">
-                                <img className="ban_i" src="./src/images/amateur.PNG"></img>
+            
+                <div className="c_slider">
+                    <div className="slider_d">
+                        <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel" data-interval="false">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                            </ol>
+                            <div className="carousel-inner">
+                                <div className="carousel-item active">
+                                    <div className="the_images">
+                                        <img className="ban_i" src="./src/images/amateur.PNG"></img>
+                                    </div>
+                                    
+                                </div>
+                                <div className="carousel-item">
+                                    <div className="the_images">
+                                        <img className="ban_i" src="./src/images/z_killer.PNG"/>
+                                    </div>
+                                </div>
+                                <div className="carousel-item">
+                                    <div className="the_images">
+                                        <img className="ban_i" src="./src/images/survivor_bg.png"/>
+                                    </div>                                    
+                                </div>
+                                <div className="carousel-item">
+                                    <div className="the_images">
+                                        <img className="ban_i" src="./src/images/assassin_bg.png" />
+                                    </div>                                    
+                                </div>
                             </div>
-                            <div className="child">
-                                <img className="ban_i" src="./src/images/z_killer.PNG"></img>
-                            </div>
-                            <div className="child">
-                                <img className="ban_i" src="./src/images/survivor_bg.png"></img>
-                            </div>
-                            <div className="child">
-                                <img className="ban_i" src="./src/images/assassin_bg.png"></img>
-                            </div>
+                            <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                <span className="fa fa-chevron-left fa-lg" aria-hidden="true"></span>
+                                <span className="sr-only">Previous</span>
+                            </a>
+                            <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                <span className="fa fa-chevron-right fa-lg" aria-hidden="true"></span>
+                                <span className="sr-only">Next</span>
+                            </a>
                         </div>
                     </div>
-                    <div>
-                        <button className="icon right_i" onClick={ scrollL }>
-                            <i className="fa fa-chevron-right" aria-hidden="true"></i>
-                        </button>
-                    </div>
+                    
                 </div>
+
+
+
+
+
+
 
 
 
@@ -153,12 +173,9 @@ ethereumButton.addEventListener('click', () => {
 
 
 let scoll_item = document.querySelector(".scroll_items");
-function scrollL() {
-    var p_width = document.documentElement.clientWidth;
-    
 
+function scrollL() {
     let l_width = scoll_item.offsetWidth;
-    //alert(l_width);
 
     scoll_item.scrollBy(l_width + 5, 0);
 
@@ -181,3 +198,12 @@ function scrollR() {
     let r_width = scoll_item.offsetWidth;
     scoll_item.scrollBy(-r_width - 5, 0);
 }
+
+$("#Next").click(function(){
+	$("#Slider").append($("#Slider img:first-of-type"));
+});
+
+$("#Prev").click(function(){
+	$("#Slider").prepend($("#Slider img:last-of-type"));
+});
+
