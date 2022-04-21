@@ -64,10 +64,10 @@ function MainContent() {
                     <div className="cover">
                         <div className="scroll_items">
                             <div className="child">
-                                <img className="ban_i" src="./src/images/amateur.png"></img>
+                                <img className="ban_i" src="./src/images/amateur.PNG"></img>
                             </div>
                             <div className="child">
-                                <img className="ban_i" src="./src/images/z_killer.png"></img>
+                                <img className="ban_i" src="./src/images/z_killer.PNG"></img>
                             </div>
                             <div className="child">
                                 <img className="ban_i" src="./src/images/survivor_bg.png"></img>
