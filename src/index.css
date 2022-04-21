@@ -533,11 +533,10 @@ body {
 
 
 .c_slider {
-    width: 50%;
-	margin: 0 auto;
-	margin-top: 90px;
-	
-	background: transparent;
+    width: 40%;
+    max-height: 60%;
+    margin: 0 auto;
+    margin-top: 90px;
 }
 
 .the_images {
