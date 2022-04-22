@@ -26,17 +26,16 @@ function MainContent() {
                             <li className="nav-item">
                                 <a className="nav-link" href="#"></a>
                             </li>
-                            <li>
-                                <button className="cybr-btn enableEthereumButton">
-                                    Connect Wallet
-                                    <span aria-hidden>_</span>
-                                    <span aria-hidden className="cybr-btn__glitch"></span>
-                                    <span aria-hidden className="cybr-btn__tag">R25</span>
-                                </button>
-                            </li>
                         </ul>
-                    
+                        <button className="cybr-btn enableEthereumButton">
+                            Connect Wallet
+                            <span aria-hidden>_</span>
+                            <span aria-hidden className="cybr-btn__glitch"></span>
+                            <span aria-hidden className="cybr-btn__tag">R25</span>
+                        </button>
                     </div>
+
+                    
                     
                 </div>
                 
@@ -71,11 +70,6 @@ function MainContent() {
                                 </div>
                                 <div className="carousel-item">
                                     <div className="the_images">
-                                        <img className="ban_i" src="./src/images/z_killer.PNG"/>
-                                    </div>
-                                </div>
-                                <div className="carousel-item">
-                                    <div className="the_images">
                                         <img className="ban_i" src="./src/images/survivor_bg.png"/>
                                     </div>                                    
                                 </div>
@@ -84,6 +78,12 @@ function MainContent() {
                                         <img className="ban_i" src="./src/images/assassin_bg.png" />
                                     </div>                                    
                                 </div>
+                                <div className="carousel-item">
+                                    <div className="the_images">
+                                        <img className="ban_i" src="./src/images/z_killer.PNG"/>
+                                    </div>
+                                </div>
+                                
                             </div>
                             <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                                 <span className="fa fa-chevron-left fa-lg" aria-hidden="true"></span>
@@ -141,9 +141,6 @@ function MainContent() {
                             <div className="column">
                                 <img className="icon_img" src="./src/images/add_icon.PNG"></img>
                                 
-                            </div>
-                            <div className="column">
-                                <img className="icon_img" src="./src/images/add_icon.PNG"></img>
                             </div>
                             <div className="column">
                                 <img className="icon_img" src="./src/images/add_icon.PNG"></img>
