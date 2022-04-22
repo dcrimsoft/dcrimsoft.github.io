@@ -5,7 +5,7 @@ function MainContent() {
             <nav className="navbar navbar-expand-lg navbar-light">
                 <div className="container">
                     <a className="navbar-brand" href="#">
-                        <img src="./src/images/home_logo.png"></img>
+                        <img src="./src/images/home_logo.PNG"></img>
                     </a>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
@@ -57,7 +57,7 @@ function MainContent() {
                 <div className="c_slider">
                     <div className="slider_d">
                         <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel" data-interval="false">
-                            <ol class="carousel-indicators">
+                            <ol className="carousel-indicators">
                                 <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
                                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
@@ -110,7 +110,6 @@ function MainContent() {
 
 
 
-    \
                 <div className="grid-container">
                     <div className="item2 udb1">
                         <img className="udb" src="./src/images/udb.jpg"></img>
@@ -140,11 +139,10 @@ function MainContent() {
 
                     <div className="main">
                         <div className="row">
-                            <div className="column">
-                                <img className="icon_img" src="./src/images/add_icon.PNG"></img>
-                                
+                            <div className="column" onClick={ scrollToTop }>
+                                <img className="icon_img" src="./src/images/add_icon.PNG"></img>                                
                             </div>
-                            <div className="column">
+                            <div className="column" onClick={ scrollToTop }>
                                 <img className="icon_img" src="./src/images/add_icon.PNG"></img>
                             </div>
                         </div>
@@ -196,6 +194,17 @@ function scrollL() {
 function scrollR() {
     let r_width = scoll_item.offsetWidth;
     scoll_item.scrollBy(-r_width - 5, 0);
+}
+
+function scrollToTop() {
+    var position =
+        document.body.scrollTop || document.documentElement.scrollTop;
+    if (position) {
+        window.scrollBy(10, -Math.max(1, Math.floor(position / 10)));
+        scrollAnimation = setTimeout("scrollToTop()", 30);
+    } else {
+        clearTimeout(scrollAnimation);
+    }
 }
 
 $("#Next").click(function(){
