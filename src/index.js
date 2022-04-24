@@ -8,7 +8,7 @@ function MainContent() {
                         <img src="./src/images/home_logo.png"></img>
                     </a>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
+                        <span className="navbar-toggler-icon"></span>
                     </button>
 
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -57,34 +57,126 @@ function MainContent() {
                 <div className="c_slider">
                     <div className="slider_d">
                         <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel" data-interval="false">
-                            <ol className="carousel-indicators">
-                                <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                            </ol>
+                            
                             <div className="carousel-inner">
+
+
+
+
+
+
+
+
+                            
+
+
+
+
+
+
+                        
+
+
                                 <div className="carousel-item active">
                                     <div className="the_images">
-                                        <img className="ban_i" src="./src/images/amateur.PNG"></img>
+                                        <div className="card">
+                                            <p>
+                                                <h5 className="card_title">AMATEUR</h5>
+                                            </p>
+                                            <img className="ban_i" src="./src/images/amateur_bg.PNG" />
+                                            <div className="d_container">
+                                                <h3 className="w_price">
+                                                    0.1 ETH
+                                                </h3>
+                                                <p className="w_det">
+                                                    <b>Knife + Pistol</b>
+                                                    <br />
+                                                    <b className="w_det1">Playable in game</b>
+                                                </p>
+                                                <button id="button" className="noselect">Buy Now</button>
+                                                
+                                            </div>
+                                        </div>
                                     </div>
-                                    
                                 </div>
+
                                 <div className="carousel-item">
                                     <div className="the_images">
-                                        <img className="ban_i" src="./src/images/survivor_bg.png"/>
-                                    </div>                                    
-                                </div>
-                                <div className="carousel-item">
-                                    <div className="the_images">
-                                        <img className="ban_i" src="./src/images/assassin_bg.png" />
-                                    </div>                                    
-                                </div>
-                                <div className="carousel-item">
-                                    <div className="the_images">
-                                        <img className="ban_i" src="./src/images/z_killer.PNG"/>
+                                        <div className="card">
+                                            <p>
+                                                <h5 className="card_title">
+                                                    SURVIVOR
+                                                </h5>
+                                            </p>
+                                            <img className="ban_i" src="./src/images/survivor_bg.png"/>
+                                            <div className="d_container" id='surv_d'>
+                                                <h3 className="w_price" >
+                                                    0.3 ETH
+                                                </h3>
+                                                <p className="w_det">
+                                                    <b>Knife + MP5 + Pistol</b>
+                                                    <br />
+                                                    <b className="w_det1">Playable in game</b>
+                                                </p>
+                                                <button id="button" className="noselect">Buy Now</button>
+                                                
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                                
+                                <div className="carousel-item">
+                                    <div className="the_images">
+                                        <div className="card">
+                                            <p>
+                                                <h5 className="card_title">ASSASSIN</h5>
+                                            </p>
+                                            <img className="ban_i" src="./src/images/assassin_bg.png"/>
+                                            <div className="d_container" id="ass_d">
+                                                <h3 className="w_price">
+                                                    0.5 ETH
+                                                </h3>
+                                                <p className="w_det">
+                                                    <b>Knife + AK47 + Pistol + Shotgun + 1 random perk</b>
+                                                    <br />
+                                                    <b className="w_det1">Playable in game</b>
+                                                </p>
+                                                <button id="button" className="noselect">
+                                                    Buy Now
+                                                </button>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div className="carousel-item">
+                                    <div className="the_images">
+                                        <div className="card">
+                                            <p>
+                                                <h5 className="card_title">ZOMBIE KILLER</h5>
+                                            </p>
+                                            <img className="ban_i" src="./src/images/z_killer.PNG" />
+                                            <div className="d_container" id="zombie_d">
+                                                <h3 className="w_price">
+                                                    1 ETH
+                                                </h3>
+                                                <p className="w_det">
+                                                    <b>Knife + F1 + Pistol + Shotgun+ 4perks + Grenade</b>
+                                                    <br />
+                                                    <b className="w_det1">Playable in game</b>
+                                                </p>
+                                                <button id="button" className="noselect">Buy Now</button>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
                                 
                             </div>
                             <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
